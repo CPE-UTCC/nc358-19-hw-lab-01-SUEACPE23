@@ -1,3 +1,26 @@
 Assignment #1 (due 25/01/2019)
 1. Shell ใน Linux มีอะไรบ้าง จงอธิบายมาอย่างน้อย 3 ชนิด
+-Bourne shell (/bin/sh) เป็น Shell ในยุคแรกๆ ที่มีการใช้กันอย่างแพร่หลาย มีการกาหนดโครงสร้างภาษาคล้ายๆ
+กับภาษาอัลกอ(AlgoLanguage)สามารถเขียนเป็น shellscript ได้ และยังเป็นเชลลม์าตราฐานที่มีในระบบปฏิบัติการย Unix 
+ทุกตyวและยังสามารถย้าย shell script ไปยัง Unix ระบบอื่นได้โดยไม่ต้องแก้ไขสคริปท์ Bourne shell จะมี default prompt 
+เป็นเครื่องหมาย “ $ ”
+-C shell (/bin/csh) เป็น Shell ที่พัฒนาขึ้นมาหลังจาก Bourne shell มีรูปแบบคำสั่งและไวยากรณ์เหมือนกับภาษาซี (C Language) 
+มีฟังก์ชั่นการทำงานหลากหลาย สะดวก อีกทั้งยังสามารถควบคุมการไหลของข้อมูลได้ดีกว่า Bourneshell และยังมีความสามารถในการ 
+เรียกใช้คำสั่งท่ีใช้ไ้ปแล้ว C shel จะมี default prompt เป็นเครื่องหมาย “ % ”
+-Kornshell คอร์นเชลล์ (/bin/ksh) เป็น shell ที่พัฒนามาจากต้นแบบของ Bourneshell และ CShell 
+สามารถทางานใน function ของ Bourne shell ได้ทกอย่าง การเขียน shell script ทำได้ง่าย และรัดกุมขึ้น 
+สามารถนำคำสั่งที่ใช้ไปแล้ว กลับมา execute ใหม่ได้ถือได้ว่า Korn shell เป็นการรวมเอาข้อดีของ Bourneshell 
+และ CShell เข้ามาไว้ด้วยกัน แต่ไม่ได้มีในUNIX ทุกตัว Kornshell จะมี default prompt เป็นเครื่องหมาย “ $ ”
+-Bourne again shell หรือ bash (แบช)  /bin/bash หรือ /usr/local/bin/bash เป็นการเอา Bourne shell 
+กลับมาพัฒนาใหม่ ทำให้สามารถทำงานแบบ line editing ได้ และยังได้เพิ่มประสิทธิภาพในการทำงานอีกหลายอย่าง 
+bashshell น้ีไม่ใช่มาตรฐานของ Unix Shell แต่เป็น default shell ของ linux ในปัจจุบัน Bash จะมี default prompt 
+เป็นเครื่องหมาย “ # หรือ $ ”
 2. การเปลี่ยนกลับมายัง Home Directory ทำได้อย่างไร จงแสดงคำสั่งที่ใช้พร้อมคำอธิบาย
+-ใช้คำสั่ง cd เพราะการใช้คำสั่งนี้ไม่ว่าจะอยู่ที่ Directory ใดๆ ก็จะกลับมาที่Home Directory
+ตย. 
+1.  $ pwd       #pwdเป็นคำสั่งที่ใช้สำหรับแสดง Directory ปัจจุบัน (ในทำนองเดียวกับการพิมพ์ cd บน DOS) มาจากคำว่า print work directory
+2.  /home/labubantu/Documents/lab01
+3.  $ cd   
+4.  $ pwd
+5.  /home/labubantu
+
